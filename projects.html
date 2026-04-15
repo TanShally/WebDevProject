@@ -1,103 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="scratch.html">Scratch me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Scratch</a>
-                    </div>
-                </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Playable Gaskin Snake Game" />
+  <meta name="author" content="Tanner Shallenberger" />
+  <title>Tanner Shallenberger | Game</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <style>
+    .snake-page {
+      --bg: #0f1020;
+      --panel: rgba(255, 255, 255, 0.08);
+      --panel-border: rgba(255, 255, 255, 0.14);
+      --text: #f5f7ff;
+      --muted: #b9bed6;
+      --snake: #8b5cf6;
+      --snake-head: #facc15;
+      --food: #ffffff;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      padding: 3rem 0;
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(250, 204, 21, 0.10), transparent 25%),
+        linear-gradient(135deg, #0a0b16, var(--bg));
+      color: var(--text);
+    }
+
+    .snake-page * {
+      box-sizing: border-box;
+    }
+
+    .snake-page .app {
+      width: min(92vw, 720px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .snake-page .topbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .snake-page .title-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .snake-page .title {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .snake-page .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .snake-page .scoreboard {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .snake-page .pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-weight: 600;
+      font-size: 0.95rem;
+      min-width: 100px;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .snake-page .game-shell {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .snake-page canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.035), transparent 22%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.03), transparent 24%),
+        linear-gradient(180deg, #16182d, #0f1020);
+    }
+
+    .snake-page .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      background: rgba(8, 10, 22, 0.56);
+      backdrop-filter: blur(10px);
+      opacity: 1;
+      transition: opacity 220ms ease;
+    }
+
+    .snake-page .overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .snake-page .card {
+      width: min(92%, 420px);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 24px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transform: translateY(0);
+      animation: floatIn 360ms ease;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .snake-page .card h2 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      line-height: 1.05;
+      color: var(--text);
+    }
+
+    .snake-page .card p {
+      margin: 10px 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .snake-page .highlight {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .snake-page .controls {
+      margin-top: 18px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .snake-page .key {
+      padding: 9px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      min-width: 52px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .snake-page .footer-note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .snake-page .ready-go-text {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 4rem);
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(250, 204, 21, 0.45);
+      opacity: 0;
+      transform: scale(0.96);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .snake-page .ready-go-text.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .snake-page .win-title {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5.5vw, 3.25rem);
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      color: #ffd166;
+      text-shadow: 0 0 24px rgba(255, 209, 102, 0.5);
+    }
+
+    .snake-page .restart-hint {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: rgba(245, 247, 255, 0.72);
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 640px) {
+      .snake-page .topbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+
+      .snake-page .scoreboard {
+        justify-content: space-between;
+      }
+
+      .snake-page .card h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+  <main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container px-5">
+        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Tanner Shallenberger</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Game</a></li>
+            <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="snake-page">
+      <div class="app">
+        <div class="topbar">
+          <div class="title-wrap">
+            <h1 class="title">Gaskin Snake Game</h1>
+            <p class="subtitle">Arrow keys or WASD. Press Spacebar to restart after game over.</p>
+          </div>
+
+          <div class="scoreboard">
+            <div class="pill">Score: <span id="score">0</span></div>
+            <div class="pill">Best: <span id="best">0</span></div>
+            <div class="pill">Speed: <span id="speed">6</span></div>
+          </div>
+        </div>
+
+        <div class="game-shell">
+          <canvas id="game" width="640" height="640"></canvas>
+
+          <div id="startOverlay" class="overlay">
+            <div class="card">
+              <h2>Gaskin Snake Game</h2>
+              <p>Eat Gaskins, grow longer, and stay alive as long as possible.</p>
+              <p>Get at least 500 points to win!</p>
+              <p><span class="highlight">Controls:</span> Arrow keys or WASD</p>
+              <div class="controls">
+                <div class="key">&#9654;</div>
+                <div class="key">&#9664;</div>
+                <div class="key">&#9650;</div>
+                <div class="key">&#9660;</div>
+                <div class="key">W A S D</div>
+              </div>
+              <p class="footer-note">Press any movement key to begin.</p>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+          </div>
+
+          <div id="gameOverOverlay" class="overlay hidden">
+            <div class="card">
+              <h2>Game Over</h2>
+              <p>Your score: <span class="highlight" id="finalScore">0</span></p>
+              <p>Press <span class="highlight">Spacebar</span> to restart.</p>
+            </div>
+          </div>
+
+          <div id="winOverlay" class="overlay hidden">
+            <div class="card">
+              <h2 class="win-title">🏆 You Win!</h2>
+              <p>You reached <span class="highlight" id="winScore">500</span> points.</p>
+              <p class="restart-hint">Press Spacebar to restart.</p>
+            </div>
+          </div>
+
+          <div id="readyGoOverlay" class="overlay hidden">
+            <h2 id="readyGoText" class="ready-go-text">Ready...</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto"><div class="small m-0">Copyright &copy; Tanner Shallenberger 2026</div></div>
+        <div class="col-auto">
+          <a class="small" href="resume.html">Resume</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small" href="projects.html">Game</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small" href="scratch.html">Scratch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    const GRID_SIZE = 20;
+    const START_LENGTH = 5;
+    const SCORE_PER_FOOD = 50;
+    const FOOD_SCALE = 2.35;
+
+    const START_TPS = 12;
+    const MAX_TPS = 12;
+    const TPS_INCREASE_PER_FOOD = 0;
+    const WIN_SCORE = 500;
+
+    const COLORS = {
+      snake: getCSS("--snake"),
+      snakeHead: getCSS("--snake-head"),
+      food: getCSS("--food")
+    };
+
+    const foodSprite = new Image();
+    foodSprite.src = "assets/gaskin.jpg";
+
+    function getCSS(variableName) {
+      return getComputedStyle(document.querySelector('.snake-page')).getPropertyValue(variableName).trim();
+    }
+
+    const canvas = document.getElementById("game");
+    const ctx = canvas.getContext("2d");
+
+    const scoreEl = document.getElementById("score");
+    const bestEl = document.getElementById("best");
+    const speedEl = document.getElementById("speed");
+    const finalScoreEl = document.getElementById("finalScore");
+    const winScoreEl = document.getElementById("winScore");
+
+    const startOverlay = document.getElementById("startOverlay");
+    const gameOverOverlay = document.getElementById("gameOverOverlay");
+    const winOverlay = document.getElementById("winOverlay");
+    const readyGoOverlay = document.getElementById("readyGoOverlay");
+    const readyGoText = document.getElementById("readyGoText");
+
+    let cellSize = canvas.width / GRID_SIZE;
+
+    let audioCtx = null;
+
+    function ensureAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === "suspended") {
+        audioCtx.resume();
+      }
+    }
+
+    function beep({ frequency = 440, duration = 0.08, type = "sine", volume = 0.03, slideTo = null }) {
+      if (!audioCtx) return;
+
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = type;
+      osc.frequency.setValueAtTime(frequency, now);
+
+      if (slideTo !== null) {
+        osc.frequency.exponentialRampToValueAtTime(slideTo, now + duration);
+      }
+
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(volume, now + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now);
+      osc.stop(now + duration + 0.01);
+    }
+
+    function playEatSound() {
+      beep({ frequency: 520, duration: 0.06, type: "triangle", volume: 0.035, slideTo: 760 });
+    }
+
+    function playMoveSound() {
+      beep({ frequency: 180, duration: 0.025, type: "square", volume: 0.008, slideTo: 210 });
+    }
+
+    function playGameOverSound() {
+      beep({ frequency: 300, duration: 0.12, type: "sawtooth", volume: 0.03, slideTo: 180 });
+      setTimeout(() => beep({ frequency: 220, duration: 0.16, type: "sawtooth", volume: 0.025, slideTo: 110 }), 70);
+    }
+
+    let bestScore = Number(localStorage.getItem("snake-best-score") || 0);
+
+    let snake = [];
+    let food = { x: 0, y: 0 };
+    let direction = { x: 1, y: 0 };
+    let nextDirection = { x: 1, y: 0 };
+
+    let started = false;
+    let gameOver = false;
+    let isCountdown = false;
+    let score = 0;
+    let foodsEaten = 0;
+    let pendingGrowth = 0;
+
+    let lastTime = 0;
+    let accumulator = 0;
+    let currentTickMs = 1000 / START_TPS;
+
+    let previousSnake = [];
+    let foodPulse = 0;
+    let eatBursts = [];
+
+    function initGame(showInstructions = true) {
+      const centerY = Math.floor(GRID_SIZE / 2);
+      const centerX = Math.floor(GRID_SIZE / 2);
+
+      snake = [];
+      for (let i = 0; i < START_LENGTH; i++) {
+        snake.push({ x: centerX - i, y: centerY });
+      }
+
+      previousSnake = snake.map(seg => ({ ...seg }));
+      direction = { x: 1, y: 0 };
+      nextDirection = { x: 1, y: 0 };
+
+      score = 0;
+      foodsEaten = 0;
+      pendingGrowth = 0;
+      started = false;
+      gameOver = false;
+      isCountdown = false;
+      accumulator = 0;
+      lastTime = 0;
+
+      currentTickMs = 1000 / START_TPS;
+      placeFood();
+      eatBursts = [];
+      updateUI();
+
+      if (showInstructions) {
+        startOverlay.classList.remove("hidden");
+      } else {
+        startOverlay.classList.add("hidden");
+      }
+      gameOverOverlay.classList.add("hidden");
+      winOverlay.classList.add("hidden");
+      readyGoOverlay.classList.add("hidden");
+    }
+
+    function restartGame() {
+      initGame(false);
+      startReadyGoSequence();
+    }
+
+    function startReadyGoSequence() {
+      if (isCountdown) return;
+      isCountdown = true;
+      started = false;
+      readyGoText.textContent = "Ready...";
+      readyGoText.classList.remove("show");
+      readyGoOverlay.classList.remove("hidden");
+      requestAnimationFrame(() => readyGoText.classList.add("show"));
+
+      setTimeout(() => {
+        readyGoText.classList.remove("show");
+        setTimeout(() => {
+          readyGoText.textContent = "Go!";
+          requestAnimationFrame(() => readyGoText.classList.add("show"));
+        }, 180);
+
+        setTimeout(() => {
+          readyGoText.classList.remove("show");
+          readyGoOverlay.classList.add("hidden");
+          isCountdown = false;
+          started = true;
+        }, 1000);
+      }, 2000);
+    }
+
+    function updateUI() {
+      scoreEl.textContent = score;
+      bestEl.textContent = bestScore;
+      speedEl.textContent = Math.round(1000 / currentTickMs);
+      finalScoreEl.textContent = score;
+      winScoreEl.textContent = score;
+    }
+
+    function placeFood() {
+      let valid = false;
+
+      while (!valid) {
+        const x = Math.floor(Math.random() * GRID_SIZE);
+        const y = Math.floor(Math.random() * GRID_SIZE);
+
+        valid = !snake.some(seg => seg.x === x && seg.y === y);
+
+        if (valid) {
+          food = { x, y };
+        }
+      }
+    }
+
+    window.addEventListener("keydown", (e) => {
+      const key = e.key.toLowerCase();
+
+      if (key === " " && gameOver) {
+        e.preventDefault();
+        restartGame();
+        return;
+      }
+
+      const newDir = getDirectionFromKey(key);
+      if (!newDir) return;
+
+      e.preventDefault();
+      ensureAudio();
+
+      if (!started && !gameOver) {
+        startOverlay.classList.add("hidden");
+        startReadyGoSequence();
+      }
+
+      if (snake.length > 1 && newDir.x === -direction.x && newDir.y === -direction.y) {
+        return;
+      }
+
+      nextDirection = newDir;
+    });
+
+    function getDirectionFromKey(key) {
+      switch (key) {
+        case "arrowup":
+        case "w":
+          return { x: 0, y: -1 };
+        case "arrowdown":
+        case "s":
+          return { x: 0, y: 1 };
+        case "arrowleft":
+        case "a":
+          return { x: -1, y: 0 };
+        case "arrowright":
+        case "d":
+          return { x: 1, y: 0 };
+        default:
+          return null;
+      }
+    }
+
+    function stepGame() {
+      if (!started || gameOver) return;
+
+      previousSnake = snake.map(seg => ({ ...seg }));
+
+      direction = { ...nextDirection };
+
+      const head = snake[0];
+      const newHead = {
+        x: head.x + direction.x,
+        y: head.y + direction.y
+      };
+
+      if (newHead.x < 0 || newHead.x >= GRID_SIZE || newHead.y < 0 || newHead.y >= GRID_SIZE) {
+        endGame();
+        return;
+      }
+
+      if (snake.some(seg => seg.x === newHead.x && seg.y === newHead.y)) {
+        endGame();
+        return;
+      }
+
+      snake.unshift(newHead);
+
+      const ateFood = newHead.x === food.x && newHead.y === food.y;
+
+      if (ateFood) {
+        score += SCORE_PER_FOOD;
+        foodsEaten += 1;
+        pendingGrowth += 4;
+        playEatSound();
+        spawnEatBurst(newHead.x, newHead.y);
+        placeFood();
+
+        const tps = Math.min(MAX_TPS, START_TPS + foodsEaten * TPS_INCREASE_PER_FOOD);
+        currentTickMs = 1000 / tps;
+      } else {
+        if (pendingGrowth > 0) {
+          pendingGrowth -= 1;
+        } else {
+          snake.pop();
+        }
+        playMoveSound();
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        localStorage.setItem("snake-best-score", String(bestScore));
+      }
+
+      updateUI();
+    }
+
+    function endGame() {
+      gameOver = true;
+      playGameOverSound();
+      updateUI();
+      if (score >= WIN_SCORE) {
+        winOverlay.classList.remove("hidden");
+        gameOverOverlay.classList.add("hidden");
+      } else {
+        gameOverOverlay.classList.remove("hidden");
+        winOverlay.classList.add("hidden");
+      }
+    }
+
+    function render(alpha) {
+      foodPulse += 0.04;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      drawBackgroundGlow();
+      drawGrid();
+      drawFood(foodPulse);
+      drawSnake(alpha);
+      drawEatBursts();
+    }
+
+    function drawBackgroundGlow() {
+      const gradient = ctx.createRadialGradient(
+        canvas.width * 0.3,
+        canvas.height * 0.25,
+        20,
+        canvas.width * 0.3,
+        canvas.height * 0.25,
+        canvas.width * 0.75
+      );
+      gradient.addColorStop(0, "rgba(255,255,255,0.03)");
+      gradient.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function drawGrid() {
+      ctx.save();
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.16)";
+      ctx.lineWidth = 1;
+
+      for (let i = 1; i < GRID_SIZE; i++) {
+        const pos = i * cellSize + 0.5;
+        ctx.beginPath();
+        ctx.moveTo(pos, 0);
+        ctx.lineTo(pos, canvas.height);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0, pos);
+        ctx.lineTo(canvas.width, pos);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function drawFood(pulse) {
+      const px = food.x * cellSize + cellSize / 2;
+      const py = food.y * cellSize + cellSize / 2;
+      const radius = cellSize * (0.46 + Math.sin(pulse) * 0.02) * FOOD_SCALE;
+
+      ctx.save();
+      ctx.shadowColor = "rgba(255,255,255,0.55)";
+      ctx.shadowBlur = 16;
+
+      if (foodSprite.complete && foodSprite.naturalWidth > 0) {
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = "high";
+        ctx.filter = "contrast(1.28) saturate(1.22) brightness(1.08)";
+        const srcW = foodSprite.naturalWidth;
+        const srcH = foodSprite.naturalHeight;
+        const crop = Math.min(srcW, srcH);
+        const sx = (srcW - crop) / 2;
+        const sy = Math.max(0, (srcH - crop) / 2 - crop * 0.08);
+        ctx.beginPath();
+        ctx.arc(px, py, radius, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(foodSprite, sx, sy, crop, crop, px - radius, py - radius, radius * 2, radius * 2);
+        ctx.filter = "none";
+      } else {
+        ctx.fillStyle = COLORS.food;
+        ctx.beginPath();
+        ctx.arc(px, py, radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.strokeStyle = "rgba(255,255,255,0.9)";
+      ctx.lineWidth = Math.max(2.5, cellSize * 0.1);
+      ctx.beginPath();
+      ctx.arc(px, py, radius, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function drawSnake(alpha) {
+      const points = [];
+      for (let i = 0; i < snake.length; i++) {
+        const curr = snake[i];
+        const prev = previousSnake[i] || curr;
+        points.push({
+          x: (lerp(prev.x, curr.x, alpha) + 0.5) * cellSize,
+          y: (lerp(prev.y, curr.y, alpha) + 0.5) * cellSize
+        });
+      }
+
+      if (points.length < 2) return;
+
+      // Draw tapered block body (thick near head, slim at tail)
+      const bodySizeHead = cellSize * 0.68;
+      const bodySizeTail = bodySizeHead * 0.25;
+      const bodyPoints = points.slice(1);
+      const totalSegments = bodyPoints.length;
+
+      ctx.save();
+      ctx.shadowColor = "rgba(139, 92, 246, 0.35)";
+      ctx.shadowBlur = 10;
+      ctx.fillStyle = COLORS.snake;
+
+      for (let i = 0; i < totalSegments; i++) {
+        const p = bodyPoints[i];
+        const t = i / Math.max(1, totalSegments - 1);
+        const size = lerp(bodySizeHead, bodySizeTail, t);
+        const x = p.x - size / 2;
+        const y = p.y - size / 2;
+        roundRect(ctx, x, y, size, size, size * 0.28);
+        ctx.fill();
+      }
+      ctx.restore();
+
+      // Draw head as block
+      const head = points[0];
+      const headSize = cellSize * 0.84;
+      const headX = head.x - headSize / 2;
+      const headY = head.y - headSize / 2;
+      ctx.save();
+      ctx.shadowColor = "rgba(250, 204, 21, 0.55)";
+      ctx.shadowBlur = 18;
+      ctx.fillStyle = COLORS.snakeHead;
+      roundRect(ctx, headX, headY, headSize, headSize, headSize * 0.3);
+      ctx.fill();
+      ctx.restore();
+
+      drawEyes(headX, headY, headSize);
+    }
+
+    function drawEyes(x, y, size) {
+      const eyeSize = size * 0.08;
+
+      if (direction.x === 1) {
+        drawEye(x + size * 0.72, y + size * 0.3, eyeSize);
+        drawEye(x + size * 0.72, y + size * 0.7, eyeSize);
+      } else if (direction.x === -1) {
+        drawEye(x + size * 0.28, y + size * 0.3, eyeSize);
+        drawEye(x + size * 0.28, y + size * 0.7, eyeSize);
+      } else if (direction.y === -1) {
+        drawEye(x + size * 0.3, y + size * 0.28, eyeSize);
+        drawEye(x + size * 0.7, y + size * 0.28, eyeSize);
+      } else {
+        drawEye(x + size * 0.3, y + size * 0.72, eyeSize);
+        drawEye(x + size * 0.7, y + size * 0.72, eyeSize);
+      }
+    }
+
+    function drawEye(x, y, r) {
+      ctx.fillStyle = "#101010";
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function spawnEatBurst(gridX, gridY) {
+      const cx = (gridX + 0.5) * cellSize;
+      const cy = (gridY + 0.5) * cellSize;
+      const colors = ["#ff4d4f", "#ff8c00", "#ffd166"];
+      const count = 18;
+
+      for (let i = 0; i < count; i++) {
+        const angle = (Math.PI * 2 * i) / count + Math.random() * 0.25;
+        const speed = (Math.random() * 0.9 + 0.8) * (cellSize * 0.12);
+        eatBursts.push({
+          x: cx,
+          y: cy,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          life: 1,
+          size: cellSize * (0.08 + Math.random() * 0.08),
+          color: colors[i % colors.length]
+        });
+      }
+    }
+
+    function drawEatBursts() {
+      if (eatBursts.length === 0) return;
+      const gravity = cellSize * 0.002;
+
+      for (let i = eatBursts.length - 1; i >= 0; i--) {
+        const p = eatBursts[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += gravity;
+        p.vx *= 0.985;
+        p.vy *= 0.985;
+        p.life -= 0.05;
+
+        if (p.life <= 0) {
+          eatBursts.splice(i, 1);
+          continue;
+        }
+
+        ctx.save();
+        ctx.globalAlpha = p.life;
+        ctx.fillStyle = p.color;
+        ctx.shadowColor = p.color;
+        ctx.shadowBlur = 10;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function roundRect(ctx, x, y, width, height, radius) {
+      const r = Math.min(radius, width / 2, height / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + width - r, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + r);
+      ctx.lineTo(x + width, y + height - r);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - r, y + height);
+      ctx.lineTo(x + r, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+    }
+
+    function gameLoop(timestamp) {
+      if (!lastTime) lastTime = timestamp;
+      const delta = timestamp - lastTime;
+      lastTime = timestamp;
+
+      accumulator += delta;
+
+      while (accumulator >= currentTickMs) {
+        stepGame();
+        accumulator -= currentTickMs;
+      }
+
+      const alpha = Math.min(accumulator / currentTickMs, 1);
+      render(alpha);
+
+      requestAnimationFrame(gameLoop);
+    }
+
+    initGame();
+    updateUI();
+    requestAnimationFrame(gameLoop);
+  </script>
+</body>
 </html>

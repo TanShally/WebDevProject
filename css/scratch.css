@@ -1,0 +1,100 @@
+:root {
+  --bg1: #edf6f9;
+  --bg2: #d6e7ff;
+  --ink: #17263b;
+  --accent: #1f7a8c;
+  --accent-dark: #125c69;
+  --card: rgba(255, 255, 255, 0.92);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(140deg, var(--bg1), var(--bg2));
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.page-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #c8d7ea;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(16, 41, 66, 0.08);
+}
+
+.quick-links,
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #b8cae4;
+}
+
+.media-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.media-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+.back-top {
+  text-align: center;
+}
+
+.tableauPlaceholder {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 2px solid #b8cae4;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.tableauPlaceholder .tableauViz {
+  width: 100%;
+}
